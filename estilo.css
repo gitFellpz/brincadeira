@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#main_2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+    flex-direction: column;
+}
+
+#coracao{
+    display: block;
+}
+
+#resultado{
+    display: block;
+}
+
+.loading-bar {
+    width: 250px;
+    height: 20px;
+    background-color: lightgray;
+    display: none;
+    margin: 20px auto;
+}
+.loading-progress {
+    height: 100%;
+    background-color: green;
+    width: 0%;
+    transition: width 5s linear;
+}
+
+.box__txt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.imagem{
+    display: none;
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+#main_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    padding: 15px;
+}
+
+#main_1 .titulo__principal {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#main_2 .titulo__principal {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.pergunta {
+    margin: 20px;
+}
+
+.box__botoes{
+    background-color: gray;
+    padding: 20px;
+    width: 230px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+button{
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.box__botoes .btn__sim{
+    width: 150px;
+    background-color: green;
+}
+
+.box__botoes .btn__nao{
+    background-color: red;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}   
+
+/* CORACAO */
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin: 50px auto;
+    animation: pulse 1s infinite;
+
+}
+  
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+  
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+  
+.heart::after {
+    top: 0;
+    left: 50px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
+}
+
